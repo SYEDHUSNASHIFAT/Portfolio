@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="index.css" />
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        const burger = document.querySelector("#burger-menu");
+        const ul = document.querySelector("nav ul");
+        const nav = document.querySelector("nav");
+        $burger.addEventListener("click", () => {
+        ul.classList.toggle("show");
+        });
+        const navLink = document.querySelectorAll(".nav-link");
+        $navLink.forEach((link) =>
+        $link.addEventListener("click", () => {
+        ul.classList.remove("show");
+        })
+        );
+    </script>
+    
+    <title>Personal Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <h1>SYED HUSNA SHIFAT</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img src="image.jpeg" alt="HUSNA" loading="lazy" class="hero-img"/>
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Hello guys welcome to my website!! <br>
+            Hmm are you guys thinking to close it? <br>
+            Just wait let me introduce my self.. <br>
+            I guess you all know my name. <br>
+            No no I am not a celebrity nor youtuber.. <br>
+            Then you guys may think how is this possible to know about my name. <br>
+            Here the answer is .. <br>
+            You guys can see my name in navigation bar <br>
+            LOL now you are checking it... <br>
+          </p>
+        </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p><center>
+          Thank you for seeing forward of my website <br>
+          <b>Her goes about me</b><br>
+          This is SYED HUSNA SHIFAT. I have few hobbies like reading books, sleeping, watching vedios(For gaining knowledge), foodie etc. I am persuning my B.E (Bachelor of Engineering) in Muffakham Jah College of Engineering and Technology , Banjara Hills , Hyderabad with the course of Information Technology (IT). I have completed my intermediate in Sri Chaitanya Junior Kalasala , Ramanthapur , Hyderabad. 
+          I have completed my matriculation in St Joseph's High School , Ramanthapur ,Hyderabad. I am interested in doing new thing . And want to get much experience. My strengths are I am good at coding, developing web and enough confident to handle things. My weakness is I sometimes procastinate things due to lack of interest. 
+
+        </center></p>
+      </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+  
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="html.jpeg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="css.jpeg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="js.jpeg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+  
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="boot.jpeg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="sql.jpeg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="git.jpeg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+        </div>
+      </section>
+
+    <!-- Projects section -->
+
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="historical.jpeg"
+              alt="Historical Places of India"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Historical Places of India</h3>
+            <p class="project-details">
+              I have created a webpage of historical places of India. I have done this project as major project in SmartKnower. 
+              Have a great experience while doing this. Got more knowledge and gained it. Thank you for giving me this as a great opportunity.
+            </p>
+            <a href="https://syedhusnashifat.github.io/smartknower/" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="credit.jpeg"
+              alt="Credit Card Fraud Detection"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Credit Card Fraud Detection</h3>
+            <p class="project-details">
+              This was a group project, and we have done this project at HACKATHON MJCET. Which was held in my college on 8<sup>th</sup> January 2022. We have used Machine Learning for this project. But unfortunately we can not complete it because of some errors. But had a great experience.
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+         
+        </div>
+      </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="https://twitter.com/Husnasy26802103" target="_blank"
+          ><img
+            src="twitter.jpeg"
+            alt="Twitter"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.instagram.com/husna_syed_/" target="_blank"
+          ><img
+            src="insta.jpeg"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.linkedin.com/in/husna-syed-875196191/" target="_blank"
+          ><img
+            src="linkedin.jpeg"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://github.com/SYEDHUSNASHIFAT" target="_blank"
+          ><img src="github.jpeg" alt="Github" class="socicon"
+        /></a>
+        </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="scrollup.jpeg"
+      class="socicon up-arrow"
+      alt="scroll-up"
+     /></i>
+     <script>
+         const scrollUp = document.querySelector("#scroll-up");
+
+         scrollUp.addEventListener("click", () => {
+         window.scrollTo({
+         top: 0,
+          left: 0,
+         behavior: "smooth",
+         });
+        });
+     </script>
+
+
+    <!-- Footer section -->
+    <footer>
+        <p class="copy">&copy; Copyright 2022</p>
+        <p class="copy">
+          Built with &#x2661; by
+          <a href="#" target="_blank"
+            >Syed Husna Shifat</a
+          >
+        </p>
+  </footer>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
